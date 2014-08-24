@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>Product Filter Level 2</title>
+    <link rel="stylesheet" type="text/css" href="css/product_filter.css">
+    <script defer src="js/jquery-1.11.1.js"></script>
+    <script defer src="js/product_filter_level3.js"></script>
+  </head>
+  <body>
+    <div id='filters' class='sections'>
+      <div class='filter-attributes'>
+        <h4>Colour</h4>
+        <input type='checkbox' name='colour' id='red' value='red' >Red</input>
+        <input type='checkbox' name='colour' id='blue' value='blue' >Blue</input>
+        <input type='checkbox' name='colour' id='green' value='green' >Green</input>
+        <input type='checkbox' name='colour' id='yellow' value='yellow' >Yellow</input>
+      </div>
+      <div class='filter-attributes'>
+        <h4>Size</h4>
+        <input type='checkbox' name='size' id='large' value='large' >Large</input>
+        <input type='checkbox' name='size' id='small' value='small' >Small</input>
+        <input type='checkbox' name='size' id='medium' value='medium' >Medium</input>
+        <input type='checkbox' name='size' id='xlarge' value='xlarge' >X-Large</input>
+      </div>
+      <div>
+        <br>
+        <input type='button' id='none' value='Clear all'></input>
+      </div>
+    </div>
+    <div class='sections'>
+      <ul>
+        <li class='grid-products large-boxes'>
+          <h4>Product 1</h4>
+          <div class='grid-variants' data-colour='red' data-size='large'>L</div>
+          <div class='grid-variants' data-colour='red' data-size='small'>S</div>
+        </li>
+        <li class='grid-products large-boxes'>
+          <h4>Product 2</h4>
+          <div class='grid-variants' data-colour='red' data-size='medium'>M</div>
+          <div class='grid-variants' data-colour='blue' data-size='small'>S</div>
+          <div class='grid-variants' data-colour='green' data-size='large'>L</div>
+        </li>
+        <li class='grid-products large-boxes'>
+          <h4>Product 3</h4>
+          <div class='grid-variants' data-colour='yellow' data-size='medium'>M</div>
+          <div class='grid-variants' data-colour='blue' data-size='large'>L</div>
+          <div class='grid-variants' data-colour='yellow' data-size='large'>L</div>
+          <div class='grid-variants' data-colour='green' data-size='medium'>M</div>
+        </li>
+        <li class='grid-products large-boxes'>
+          <h4>Product 4</h4>
+          <div class='grid-variants' data-colour='blue' data-size='medium'>M</div>
+          <div class='grid-variants' data-colour='blue' data-size='large'>L</div>
+          <div class='grid-variants' data-colour='red' data-size='small'>S</div>
+          <div class='grid-variants' data-colour='green' data-size='medium'>M</div>
+          <div class='grid-variants' data-colour='green' data-size='small'>S</div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
